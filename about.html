@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="css/bootstrap-override.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/custom.css">
     <!--For Css  -->
 
 </head>
@@ -24,17 +27,17 @@
 <body>
     <header>
         <!-- Nav -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="about.html"> <img src="/images/education logo.jpg" width="30" height="30"
-                        class="d-inline-block align-top" alt="Griyaa Skills Logo">
+                <a class="navbar-brand" href="about.html"> <img src="/images/education-orange.png" width="30"
+                        height="30" class="d-inline-block align-top" alt="Griyaa Skills Logo">
                     Griyaa Skills </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div  class="collapse navbar-collapse col-9 col-lg-9" id="navbarCollapse">
+                <div class="collapse navbar-collapse col-9 col-lg-9" id="navbarCollapse">
                     <ul class="nav navbar-nav mr-auto">
                         <li class="nav-item ">
                             <a class="nav-link active" href="about.html">Home</a>
@@ -98,174 +101,60 @@
                     </ul>
                 </div>
                 <div class="col-2 col-lg-3 text-right ">
-                    <a href="login.html" class="small mr-3 text-white">
-                        <i class="bi bi-file-lock"></i>
+                    <a href="login.html" class="btn btn-warning" id=my-button>
+                        <!-- <i class="bi bi-file-lock"></i> -->
                         Log In / Signup
                     </a>
-                    <!-- <a href="register.html" class="small text-white">
-                        <i class="bi bi-file-person"></i>
-                        Register
-                    </a> -->
                 </div>
             </div>
         </nav>
         <!-- Nav -->
     </header>
-    <br>
-    <!-- Hero -->
-    <div class="p-5 text-center bg-image rounded-3" style=" background-color: gray; height: 450px;">
-        <div class="mask">
-            <div class="d-flex justify-content-center align-items-center h-100">
-                <div class="text-white">
-                    <h1 class="mb-3">Griyaa Skills </h1>
-                    <h4 class="mb-3">Unlimited access to world-class courses, hands-on projects, and job-ready
-                        certificate programs—all included in your subscription</h4>
-                    <a data-mdb-ripple-init class="btn btn-outline-light btn-lg" href="allcourses.html"
-                        role="button">Learn more</a>
-                </div>
+   <br>
+    <main class="container" role="main">
+        <div id="welcomeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Welcome 1"></button>
+                <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="1"
+                    aria-label="Welcome 2"></button>
+                <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="2"
+                    aria-label="Welcome 3"></button>
             </div>
-        </div>
-    </div>
-
-    <!-- Hero -->
-
-    <!--Carousel -->
-    <div id="carouselExampleCaptions" class="carousel carousel-dark slide m-5" data-bs-ride="false">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-
-
-
-                <div class="card-group">
-
-                    <div class="card ">
-                        <img src="/images/Google AI.jpg" class="card-img-top " alt="..." width="100px" height="130px">
-                        <div class="card-body">
-                            <h5 class="card-title">Google AI Essentials</h5>
-                            <p class="card-text">Google AI Essentials is a self-paced course designed to help
-                                people
-                                across roles and industries get essential AI skills
-                            </p>
-                            <p class="card-text"><small class="text-muted">Course</small></p>
-                        </div>
+            <div class="carousel-inner">
+                <div class="carousel-item welcome-carousel-image1 active">
+                    <div class="carousel-caption">
+                        <h1>Classroom Batches</h1>
+                        <p>Registration open for all courses</p>
                     </div>
-
-
-                    <div class="card">
-                        <img src="/images/Navigating AI.png" class="card-img-top " alt="..." width="100px"
-                            height="130px">
-                        <div class="card-body">
-                            <h5 class="card-title">Navigating Generative AI</h5>
-                            <p class="card-text">A practical overview of GenAI’s capabilities, limitations, and
-                                where it
-                                may be heading. How to enable your organization to use GenAI to create customer
-                                value
-                                and boost productivity </p>
-                            <p class="card-text"><small class="text-muted">Specialization Course</small></p>
-                        </div>
+                </div>
+                <div class="carousel-item welcome-carousel-image2">
+                    <div class="carousel-caption text-start">
+                        <h1>Live Courses</h1>
+                        <p>Prices slashed this month </p>
+                        <p><a class="btn btn-lg btn-primary" href="" role="button">Sign up
+                                today</a></p>
                     </div>
-
-                    <div class="card">
-                        <img src="images/python.webp" class="card-img-top" alt="..." width="100px" height="130px">
-                        <div class="card-body">
-                            <h5 class="card-title">Everyhing About Python</h5>
-                            <p class="card-text">Python is a general-purpose, versatile, and powerful
-                                programming
-                                language. It’s a great first language because Python code is concise and easy to
-                                read.
-                                Whatever you want to do, python can do it.</p>
-                            <p class="card-text"><small class="text-muted">Course</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/leading teams.jpeg" class="card-img-top" alt="..." width="100px"
-                            height="130px">
-                        <div class="card-body">
-                            <h5 class="card-title">Leading Teams:Developing as a leader</h5>
-                            <p class="card-text">you will learn how to build your team, improve teamwork and
-                                collaboration, and sustain team performance through continuous learning and
-                                improvement.
-                                Specifically, you will learn best practices for composing a team and aligning
-                                individual
-                                and team goals.</p>
-                            <p class="card-text"><small class="text-muted">Course</small></p>
-                        </div>
+                </div>
+                <div class="carousel-item welcome-carousel-image3">
+                    <div class="carousel-caption text-end">
+                        <h1>Great coding festival</h1>
+                        <p>Aptitude and schlorship fest</p>
+                        <p><a class="btn btn-lg btn-primary" href="" role="button">Enroll today</a></p>
                     </div>
                 </div>
             </div>
-
-
-            <div class="carousel-item">
-                <div class="card-group">
-                    <div class="card">
-                        <img src="/images/sql.jpeg" class="card-img-top" alt="..." width="100px" height="130px">
-                        <div class="card-body">
-                            <h5 class="card-title">The Structured Query Language</h5>
-                            <p class="card-text">you will learn all about the Structured Query Language ("SQL".) We
-                                will
-                                review the origins of the language and its conceptual foundations. </p>
-                            <p class="card-text"><small class="text-muted">Course</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="/images/Applieddatasscience.jpeg" class="card-img-top" alt="..." width="100px"
-                            height="130px">
-                        <div class="card-body">
-                            <h5 class="card-title">Applied Data Science</h5>
-                            <p class="card-text">You will apply your skills to perform data collection, data
-                                wrangling,
-                                exploratory data analysis, data visualization model development, and model
-                                evaluation
-                            </p>
-                            <p class="card-text"><small class="text-muted">Course</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/Excel.jpeg" class="card-img-top" alt="..." width="100px" height="130px">
-                        <div class="card-body">
-                            <h5 class="card-title">Excel Skills for Business</h5>
-                            <p class="card-text">In this Specialization, learners develop advanced Excel Skills for
-                                Business. Learners can design sophisticated spreadsheets, including professional
-                                dashboards, and perform complex
-                                calculations using advanced Excel features and techniques.</p>
-                            <p class="card-text"><small class="text-muted">Specialization Course</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/cyber security.jpeg" class="card-img-top " alt="..." width="100px"
-                            height="130px">
-                        <div class="card-body">
-                            <h5 class="card-title">Google Cyber Security</h5>
-                            <p class="card-text">You will recognize core skills and knowledge needed to become a
-                                cybersecurity analyst and Identify how security attacks impact business operations
-                            </p>
-                            <p class="card-text"><small class="text-muted">Course</small></p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
+            <button class="carousel-control-prev" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <!-- <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button> -->
-    </div>
-    <!--Carousel -->
+   
+    </main>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-.card-registration .select-input.form-control[readonly]:not([disabled]) {
+/* .card-registration .select-input.form-control[readonly]:not([disabled]) {
     font-size: 1rem;
     line-height: 2.15;
     padding-left: .75em;
@@ -7,7 +7,7 @@
 
 .card-registration .select-arrow {
     top: 13px;
-}
+} */
 
 .dropdown-menu li {
     position: relative;
@@ -29,3 +29,7 @@
     display: block;
 }
 
+#my-button {
+    background-color: orange;
+    border-color: orange;
+}
