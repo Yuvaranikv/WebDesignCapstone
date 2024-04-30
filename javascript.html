@@ -21,60 +21,109 @@
 
 <body>
     <header>
-        <!-- Nav -->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href="about.html">
-                    <img src="/images/education logo.jpg" width="30" height="30" class="d-inline-block align-top"
-                        alt="Griyaa Skills Logo">
-                    Griyaa Skills
-                </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Nav -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="about.html"> <img src="/images/education logo.jpg" width="30" height="30"
+                        class="d-inline-block align-top" alt="Griyaa Skills Logo">
+                    Griyaa Skills </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse col-9 col-lg-9" id="navbarCollapse">
                     <ul class="nav navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="about.html">Home</a>
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="about.html">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="allcourses.html">Explore</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="nav-dropdown" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Explore
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="nav-dropdown">
+                                <li><a class="dropdown-item" href="">Development</a>
+                                    <ul class="dropdown-menu dropdown-submenu">
+                                        <li>
+                                            <a class="dropdown-item" href="#">Web Development</a>
+                                            <ul class="dropdown-menu dropdown-submenu">
+                                                <li>
+                                                    <a class="dropdown-item" href="javascript.html">Javascript</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">React js</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Angular</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Next.js</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">CSS</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">HTML</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Data Science</a>
+                                            <ul class="dropdown-menu dropdown-submenu">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Machine Learning</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Python</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Artificial Intelligence</a>
+                                                </li>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Mobile Development</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">programming Languages</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="">Business</a></li>
+                                <li><a class="dropdown-item" href="">It & Software</a></li>
+                            </ul>
                         </li>
-
                     </ul>
                 </div>
-                <div class="col-6 col-lg-3 text-right">
+                <div class="col-2 col-lg-3 text-right ">
                     <a href="login.html" class="small mr-3 text-white">
                         <i class="bi bi-file-lock"></i>
-                        Log In
+                        Log In / Signup
                     </a>
-                    <a href="register.html" class="small text-white">
+                    <!-- <a href="register.html" class="small text-white">
                         <i class="bi bi-file-person"></i>
                         Register
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </nav>
-         <!-- Nav -->
-
+        <!-- Nav -->
     </header>
 </body>
 <br>
 <br>
 <!-- Hero -->
-<div class=" text-left " >
+<div class=" text-left ">
     <div class="mask p-5">
         <div class="d-flex justify-content-left align-items-left ">
             <div class="text-black">
                 <h1 class="mb-3">JavaScript Courses </h1>
                 <h4 class="mb-3">Javascript relates to Development, IT and Software</h4>
-                <i class="bi bi-people">16533 Learners</i> 
+                <i class="bi bi-people">16533 Learners</i>
             </div>
-            
-            
+
+
         </div>
     </div>
     <div class="p-5 ">
@@ -123,13 +172,13 @@
                     <img src="/images/js4.png" class="card-img-top " alt="..." width="100px" height="130px">
                     <div class="card-body">
                         <h5 class="card-title">CSS and Javascript:Certification Course for beginners/h5><br>
-                        <small>Jonas Schmedtmann</small>
-                        <p class="card-text">$499
-                        </p>
-                        <a href="#" class="btn btn-primary">Best Seller</a>
+                            <small>Jonas Schmedtmann</small>
+                            <p class="card-text">$499
+                            </p>
+                            <a href="#" class="btn btn-primary">Best Seller</a>
                     </div>
                 </div>
-                
+
                 <div class="card ">
                     <img src="/images/js3.png" class="card-img-top " alt="..." width="100px" height="130px">
                     <div class="card-body">
@@ -140,7 +189,7 @@
                         <a href="#" class="btn btn-primary">Best Seller</a>
                     </div>
                 </div>
-               
+
             </div>
         </div>
 
@@ -181,8 +230,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="images/cyber security.jpeg" class="card-img-top " alt="..." width="100px"
-                        height="130px">
+                    <img src="images/cyber security.jpeg" class="card-img-top " alt="..." width="100px" height="130px">
                     <div class="card-body">
                         <h5 class="card-title">Google Cyber Security</h5>
                         <p class="card-text">You will recognize core skills and knowledge needed to become a
@@ -195,16 +243,15 @@
 
         </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button>
 </div>
 <!--Carousel -->
+
 </html>
